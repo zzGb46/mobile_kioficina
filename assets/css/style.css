@@ -1,0 +1,833 @@
+/*--------------------------------------------------------------
+    1- Definição das fontes do projeto
+----------------------------------------------------------------*/
+@font-face {
+    font-family: 'PACE';
+    src: url('../fonts/pace-racing-car/PACE.woff2') format('woff2'),
+        url('../fonts/pace-racing-car/PACE.woff') format('woff'),
+        url('../fonts/pace-racing-car/PACE.ttf') format('truetype'),
+        url('../fonts/pace-racing-car/PACE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PACE Italic';
+    src: url('../fonts/pace-racing-car/PACE-Italic.woff2') format('woff2'),
+        url('../fonts/pace-racing-car/PACE-Italic.woff') format('woff'),
+        url('../fonts/pace-racing-car/PACE-Italic.ttf') format('truetype'),
+        url('../fonts/pace-racing-car/PACE-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofast';
+    src: url('../fonts/sofast-racing-car/Sofast.woff2') format('woff2'),
+        url('../fonts/sofast-racing-car/Sofast.woff') format('woff'),
+        url('../fonts/sofast-racing-car/Sofast.ttf') format('truetype'),
+        url('../fonts/sofast-racing-car/Sofast.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofast Italic';
+    src: url('../fonts/sofast-racing-car/Sofast-Italic.woff2') format('woff2'),
+        url('../fonts/sofast-racing-car/Sofast-Italic.woff') format('woff'),
+        url('../fonts/sofast-racing-car/Sofast-Italic.ttf') format('truetype'),
+        url('../fonts/sofast-racing-car/Sofast-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+:root {
+    --fontNoCorpo: "Sofast";
+    --titulos: "PACE";
+    --corDoTexto: #4B4B4B;
+    --corDeFundo: #101010;
+    --titulos-color: #fff;
+    --border-color: #fff;
+    --white-color: #fff;
+    --black-color: #000000;
+    --primary-color: #FFFF00;
+}
+
+
+
+
+
+html {
+
+    body {
+        max-width: 400px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: var(--corDeFundo);
+        justify-content: center;
+    }
+
+
+    /* ================================================================================= */
+    /* PÁGINA DE LOGIN */
+    #login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            /* TAMANHO AJUSTADO PARA 380PX */
+        }
+
+        .logo {
+            width: 80%;
+            max-width: 300px;
+            /* LOGO LEVEMENTE AJUSTADA */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: var(--titulos);
+            color: yellow;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 22px;
+        }
+
+        .caixa-form {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 400px;
+            /* AGORA ENTRE 360PX E 380PX */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            /* box-sizing: border-box; */
+            font-family: var(--titulos);
+
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            gap: 6px;
+        }
+
+        label {
+            font-weight: bold;
+            color: black;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+
+
+        a {
+            width: 100%;
+
+            .btn-entrar {
+                background-color: #f9a825;
+                color: black;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 12px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+                font-size: 16px;
+                font-family: var(--titulos);
+            }
+        }
+    }
+
+    /* #endregion - fim de Login */
+
+    /* ================================================================================= */
+
+
+
+    /* ================================================================================= */
+
+    /* PÁGINA INICIAL - MENU */
+    #home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .logo {
+                width: 80%;
+                max-width: 250px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-family: var(--titulos);
+                color: yellow;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                color: white;
+                margin-bottom: 20px;
+                font-family: var(--titulos);
+            }
+
+            .botoes {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                max-width: 300px;
+                font-family: var(--titulos);
+
+            }
+
+            .btn {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 5px;
+            }
+
+            .btn.yellow {
+                background-color: #f9a825;
+                color: var(--border-color);
+            }
+
+            .btn.red {
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+
+    /* #endregion -  menu */
+    /* ================================================================================= */
+
+
+
+
+    /* ================================================================================= */
+
+    /* PÁGINA DE AGENDAMENTO*/
+    #agendamento {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: var(--corDeFundo);
+        padding: 20px;
+        /* height: 100vh; */
+        box-sizing: border-box;
+
+        .app {
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+
+            .titulo-agendamento {
+                font-family: var(--fontNoCorpo);
+                color: var(--primary-color);
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+
+            .form-container {
+                width: 100%;
+                background-color: white;
+                /* Apenas no formulário */
+                border-radius: 10px;
+                padding: 15px;
+                border: 2px solid var(--border-color);
+                box-sizing: border-box;
+
+                .campo {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    text-align: left;
+
+                    label {
+                        font-family: var(--titulos);
+                        font-size: 14px;
+                        font-weight: bold;
+                        display: block;
+                        margin-bottom: 5px;
+                        text-align: left;
+                    }
+
+                    input,
+                    select {
+                        width: 100%;
+                        height: 35px;
+                        padding: 5px;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                        font-size: 14px;
+                    }
+                }
+
+                .esse {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+
+                    .btn-confirmar {
+                        background-color: #FFCC00;
+                        border: none;
+                        font-family: var(--titulos);
+                        border-radius: 5px;
+                        width: 100%;
+                        color: var(--border-color);
+                        height: 40px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .acoes-agendamento {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                width: 100%;
+                margin-top: 15px;
+
+
+
+                button {
+                    width: 100%;
+                    height: 40px;
+                    font-family: var(--titulos);
+                    font-size: 14px;
+                    font-weight: bold;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+
+
+                    &.btn-retornar {
+                        background-color: #FFCC00;
+                        color: white;
+                        height: 30px;
+                        width: 100%;
+                    }
+
+                    &.btn-lista {
+                        background-color: #00FF00;
+                        color: white;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #endregion - fim do Agendamento */
+    /* ================================================================================= */
+
+
+
+    /* ================================================================================= */
+
+    /* PÁGINA DE  LISTA DE AGENDAMENTO*/
+    #lista-agendamentos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: var(--corDeFundo);
+        padding: 20px;
+        /* height: 100vh; */
+
+        .app {
+            max-width: 400px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .titulo-lista {
+                font-family: var(--fontNoCorpo);
+                color: var(--primary-color);
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+
+            .lista-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .agendamento {
+                    background-color: #333;
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: 2px solid #444;
+                    color: white;
+                    font-family: var(--titulos);
+                    font-size: 11px;
+
+                    p {
+                        margin: 5px 0;
+                    }
+
+                    .status {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        padding: 5px;
+                        text-align: center;
+                        border-radius: 5px;
+                    }
+
+                    .concluido {
+                        color: #00FF00;
+                    }
+
+                    .cancelado {
+                        color: #FF4444;
+                    }
+
+                    .analise {
+                        color: #00f2ff;
+                    }
+                }
+            }
+
+            .btn-voltar {
+                margin-top: 15px;
+                width: 100%;
+                height: 40px;
+                font-family: var(--titulos);
+                font-size: 14px;
+                font-weight: bold;
+                background-color: #FFCC00;
+                color: black;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    /* #endregion - fim do LIsta Agendamento */
+
+    /* ================================================================================= */
+
+
+
+
+
+
+    /* ================================================================================= */
+    /* PÁGINA DE DEPOIMENTOS  */
+    #depoimentos {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--corDeFundo);
+        padding: 20px;
+
+        .app {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-family: var(--fontNoCorpo);
+                color: var(--primary-color);
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 25px;
+            }
+
+            .box {
+                width: 75%;
+                background-color: white;
+                border-radius: 10px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                text-align: center;
+                font-family: var(--titulos);
+
+                .campo {
+                    width: 100%;
+
+                    label {
+                        font-weight: bold;
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+
+                    textarea {
+                        width: 80%;
+                        height: 60px;
+                        resize: none;
+                        padding: 8px;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                    }
+
+                    .estrelas {
+                        font-size: 35px;
+                        cursor: pointer;
+                        color: gray;
+                    }
+                }
+            }
+
+            .btn {
+                width: 100%;
+                background-color: orange;
+                border-radius: 5px;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                text-transform: uppercase;
+                cursor: pointer;
+                font-family: var(--titulos);
+            }
+
+
+            a {
+
+                .btn-voltar {
+                    width: 100%;
+                    background-color: yellow;
+                    border-radius: 5px;
+                    padding: 10px;
+                    font-weight: bold;
+                    border: none;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    font-family: var(--titulos);
+                }
+            }
+
+        }
+    }
+
+    /* #endregion - fim da Página de Perfil */
+    /* ================================================================================= */
+
+    /* ================================================================================= */
+
+    /* PÁGINA DE PERFIL */
+
+    #perfil {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: var(--corDeFundo);
+        padding: 20px;
+        box-sizing: border-box;
+    
+        .app {
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+    
+            .titulo-perfil {
+                font-family: var(--fontNoCorpo);
+                color: var(--primary-color);
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 10px; /* Reduzido para diminuir o espaço */
+                font-size: 18px; /* Reduzido para diminuir o tamanho */
+            }
+    
+            .foto-container {
+                position: relative;
+                width: 80px; /* Reduzido para tornar a foto menor */
+                height: 80px; /* Reduzido para tornar a foto menor */
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: 15px; /* Reduzido o espaço entre foto e formulário */
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+    
+                .editar-foto {
+                    position: absolute;
+                    bottom: -5px;
+                    right: -5px;
+                    background: yellow;
+                    color: black;
+                    font-size: 16px; /* Reduzido */
+                    font-weight: bold;
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+    
+            .form-container {
+                width: 100%;
+                background-color: white;
+                border-radius: 10px;
+                padding: 10px; /* Reduzido para diminuir o espaço interno */
+                border: 2px solid var(--border-color);
+                box-sizing: border-box;
+    
+                .campo {
+                    width: 100%;
+                    margin-bottom: 10px; /* Reduzido para diminuir o espaço entre os campos */
+                    text-align:center;
+    
+                    label {
+                        font-family: var(--titulos);
+                        font-size: 12px; /* Reduzido para diminuir o tamanho */
+                        font-weight: bold;
+                        display: block;
+                        margin-bottom: 5px;
+                        text-align: left;
+                    }
+    
+                    input,
+                    select {
+                        width: 90%;
+                        height: 30px; /* Reduzido para diminuir a altura dos campos */
+                        /* padding: 5px; */
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                        font-size: 12px; /* Reduzido para diminuir o tamanho da fonte */
+                    }
+                }
+    
+                .linha-dupla {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+    
+                    .campo {
+                        flex: 1;
+                    }
+                }
+            }
+    
+            .acoes-perfil {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                width: 100%;
+                margin-top: 10px; /* Reduzido para diminuir o espaço entre formulário e botões */
+    
+                .btn-salvar,
+                .btn-voltar {
+                    width: 100%;
+                    height: 35px; /* Reduzido a altura do botão */
+                    font-family: var(--titulos);
+                    font-size: 12px; /* Reduzido para diminuir o tamanho da fonte */
+                    font-weight: bold;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                }
+    
+                .btn-salvar {
+                    background-color:orange;;
+                    color: var(--titulos-color)
+                }
+    
+                .btn-voltar {
+                    background-color: orange;;
+                    color: var(--titulos-color)
+                }
+            }
+        }
+    }
+    
+
+    /* #endregion - fim da Página de Perfil */
+
+    /* ================================================================================= */
+
+
+    /* ================================================================================= */
+    /* PÁGINA DE LISTA DE SERVIÇOS */
+    #lista-servicos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: var(--corDeFundo);
+        flex-direction: column;
+    
+        h1 {
+            font-family: var(--fontNoCorpo);
+            color: var(--primary-color);
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 28px; /* Ajustado para uma melhor leitura */
+        }
+    
+        .app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 400px;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #333;
+            border-radius: 10px;
+    
+            .box {
+                background-color: #4B4B4B;
+                border-radius: 10px;
+                padding: 15px;
+                gap: 10px;
+                text-align: center;
+                width: 80%;
+                max-width: 400px;
+                color: white;
+    
+                p {
+                    font-size: 10px;
+                    font-family: var(--fontNoCorpo);
+
+                    strong{
+                        font-family: var(--titulos);
+                        font-size: 11px;
+                    }
+            
+                    
+                }
+    
+                .status {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 5px;
+                    border-radius: 5px;
+                    font-size: 12px; /* Tamanho da fonte ajustado para ficar mais compacto */
+                }
+    
+                .analise {
+                    color:  #FF6600;
+                    font-family: var(--titulos);
+                }
+    
+                .processando {
+                    color: #FF6600;
+                }
+    
+                .concluido {
+                    color: #00FF00;
+                }
+            }
+        }
+    
+        .esse {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+    
+            .btn-voltar {
+                background-color: orange;
+                border-radius: 5px;
+                padding: 10px;
+                font-weight: bold;
+                width: 100%;
+                height: 40px;
+                font-size: 14px; /* Ajustado para um tamanho mais proporcional ao restante */
+                text-align: center;
+                cursor: pointer;
+                border: none;
+                margin-top: 15px;
+                font-family: var(--titulos);
+                border: none;
+                color: var(--white-color);
+            }
+        }
+    }
+    
+
+    /* #endregion - fim da Página de Perfil */
+
+    /* ================================================================================= */
+
+
+
+
+
+
+
+}
