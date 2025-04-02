@@ -1,7 +1,7 @@
-<?php 
-require_once('../../config/config.php');
-$titulo = 'Menu principal - Ki-oficina';
-?>
+<!-- <?php 
+// require_once('../../config/config.php');
+// $titulo = 'Menu principal - Ki-oficina';
+?> -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -44,7 +44,7 @@ require_once('template/head.php');
             </div>
 
             <div class="acoes-agendamento">
-                <a href="menu.html"><button class="btn-retornar">Voltar</button></a> 
+                <a href="<?php echo BASE_URL; ?>index.php?url=menu"><button class="btn-retornar">Voltar</button></a> 
                 <a href="listaAgendameto.html"><button class="btn-lista">Ver Agenda</button></a>
             </div>
         </div>

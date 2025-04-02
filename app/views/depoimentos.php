@@ -1,7 +1,7 @@
-<?php 
-require_once('../../config/config.php');
-$titulo = 'Menu principal - Ki-oficina';
-?>
+<!-- <?php 
+// require_once('../../config/config.php');
+// $titulo = 'Menu principal - Ki-oficina';
+?> -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,7 +27,7 @@ require_once('template/head.php');
                 </div>
                 <button class="btn">Enviar Depoimento</button>
             </div>
-            <a href="menu.html"> <button class="btn-voltar">Voltar</button> </a><!-- Botão de Voltar agora está dentro da .app -->
+            <a href="<?php echo BASE_URL; ?>index.php?url=menu"> <button class="btn-voltar">Voltar</button> </a><!-- Botão de Voltar agora está dentro da .app -->
         </div>
     </section>
 

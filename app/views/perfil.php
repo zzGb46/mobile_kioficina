@@ -1,7 +1,7 @@
-<?php 
-require_once('../../config/config.php');
-$titulo = 'Menu principal - Ki-oficina';
-?>
+<!-- <?php 
+// require_once('../../config/config.php');
+// $titulo = 'Menu principal - Ki-oficina';
+?> -->
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -67,7 +67,7 @@ require_once('template/head.php');
 
             <div class="acoes-perfil">
                 <button class="btn-salvar">Salvar Alterações</button>
-                <a href="index.html"><button class="btn-voltar">Voltar</button></a>
+                <a href="<?php echo BASE_URL; ?>index.php?url=menu"><button class="btn-voltar">Voltar</button></a>
             </div>
         </div>
     </section>

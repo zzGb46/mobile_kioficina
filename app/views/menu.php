@@ -1,6 +1,6 @@
 
 <?php 
-require_once('../../config/config.php');
+require_once('../config/config.php');
 $titulo = 'Menu principal - Ki-oficina';
 ?>
 <!DOCTYPE html>
@@ -20,11 +20,11 @@ require_once('template/head.php');
                 <p>Olá, João Silva!</p>
 
                 <div class="botoes">
-                    <a href="agendamento.html" class="btn yellow">Agendamento</a>
-                    <a href="listaServico.html" class="btn yellow">Listar Serviços</a>
-                    <a href="depoimentos.html" class="btn yellow">Depoimentos</a>
-                    <a href="perfil.html" class="btn yellow">Perfil</a>
-                    <a href="index.html" class="btn red">Sair</a>
+                    <a href="<?php echo BASE_URL; ?>index.php?url=Agendamento" class="btn yellow">Agendamento</a>
+                    <a href="<?php echo BASE_URL; ?>index.php?url=agenda" class="btn yellow">Listar Serviços</a>
+                    <a href="<?php echo BASE_URL; ?>index.php?url=depoimentos" class="btn yellow">Depoimentos</a>
+                    <a href="<?php echo BASE_URL; ?>index.php?url=perfil" class="btn yellow">Perfil</a>
+                    <a href="<?php echo BASE_URL; ?>index.php?url=login" class="btn red">Sair</a>
                 </div>
             </div>
         </section>

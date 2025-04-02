@@ -1,7 +1,7 @@
-<?php 
-require_once('config/config.php');
-$titulo = 'Login - Ki-oficina';
-?>
+<!-- <?php 
+// require_once('../config/config.php');
+// $titulo = 'Login - Ki-oficina';
+?> -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,7 +9,7 @@ $titulo = 'Login - Ki-oficina';
 
 <body>
 <?php 
-require_once('app/views/template/head.php');
+require_once('../app/views/template/head.php');
 ?>
     <main>
         <section id="login">
@@ -28,7 +28,7 @@ require_once('app/views/template/head.php');
                         <input type="password" name="senha" id="senha" required>
                     </div>
 
-                    <a href="menu.html"> <button type="submit" class="btn-entrar">Entrar</button></a>
+                    <a href="<?php echo BASE_URL; ?>index.php?url=menu"> <button type="submit" class="btn-entrar">Entrar</button></a>
                 </div>
             </div>
         </section>

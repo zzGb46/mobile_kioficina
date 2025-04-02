@@ -1,8 +1,8 @@
 <!-- ALTEREI O NOME PORQUE NÃO ESTAVA INDO ENTÃO IMPROVISEI COM O NOME DO ARQUIVO -->
-<?php 
-require_once('../../config/config.php');
-$titulo = 'Lista Agendamento - Ki-oficina';
-?>
+<!-- <?php 
+// require_once('../../config/config.php');
+// $titulo = 'Lista Agendamento - Ki-oficina';
+?> -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -41,7 +41,7 @@ require_once('template/head.php');
                 </div>
             </div>
 
-            <a href="agendamento.html"><button class="btn-voltar">Voltar</button> </a>
+            <a href="<?php echo BASE_URL; ?>index.php?url=menu"><button class="btn-voltar">Voltar</button> </a>
         </div>
     </section>
 </body>
