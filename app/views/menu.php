@@ -20,7 +20,7 @@ require_once('template/head.php');
                 <p>Olá, João Silva!</p>
 
                 <div class="botoes">
-                    <a href="<?php echo BASE_URL; ?>index.php?url=Agendamento" class="btn yellow">Agendamento</a>
+                    <a href="<?php echo BASE_URL; ?>index.php?url=agendamento" class="btn yellow">Agendamento</a>
                     <a href="<?php echo BASE_URL; ?>index.php?url=agenda" class="btn yellow">Listar Serviços</a>
                     <a href="<?php echo BASE_URL; ?>index.php?url=depoimentos" class="btn yellow">Depoimentos</a>
                     <a href="<?php echo BASE_URL; ?>index.php?url=perfil" class="btn yellow">Perfil</a>
